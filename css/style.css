@@ -1,0 +1,48 @@
+tan_background {
+	background: #E5E7D7;
+}
+
+teal_background{
+	background: #6EDDCD;	
+}
+
+now_open {
+	font-family: Roboto-Regular;
+	font-size: 36px;
+	color: #000001;
+	letter-spacing: 16.34px;
+}
+
+
+
+web_address {
+	font-family: Roboto-Regular;
+	font-size: 24px;
+	color: #000001;
+}
+
+
+
+groucho_guy {
+	border: 7px solid #000001;
+}
+
+
+
+groucho_text {
+	font-family: Roboto-Regular;
+	font-size: 36px;
+	color: #000001;
+	letter-spacing: 16.34px;
+	line-height: 33px;	
+}
+
+
+
+optics_txt {
+
+	font-family: TimesNewRomanPSMT;
+	font-size: 144px;
+	color: #000001;
+	letter-spacing: 18.22px;
+}
