@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'live-server' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'live-server', null ]
+7 verbose cache add spec live-server
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'live-server',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'live-server',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed live-server@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for live-server
+11 info addNameTag [ 'live-server', 'latest' ]
+12 silly mapToRegistry name live-server
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'live-server',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'live-server',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/live-server
+17 verbose addNameTag registry:https://registry.npmjs.org/live-server not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/live-server
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 9:15:51 PM
+21 verbose request id 74a27df417448207
+22 http request GET https://registry.npmjs.org/live-server
+23 http 200 https://registry.npmjs.org/live-server
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   etag: '"8JNUDFJURB0FSS7475TO21K8E"',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'content-encoding': 'gzip',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'content-length': '9033',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Thu, 26 May 2016 03:15:52 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-ord1742-ORD',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1464232552.070948,VS0,VE48',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"8JNUDFJURB0FSS7475TO21K8E"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'content-encoding': 'gzip',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'content-length': '9033',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Thu, 26 May 2016 03:15:52 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-ord1742-ORD',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1464232552.070948,VS0,VE48',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose get saving live-server to /Users/shawnfarnum/.npm/registry.npmjs.org/live-server/.cache.json
+27 verbose correctMkdir /Users/shawnfarnum/.npm correctMkdir not in flight; initializing
+28 silly addNameTag next cb for live-server with tag latest
+29 silly addNamed live-server@1.0.0
+30 verbose addNamed "1.0.0" is a plain semver version for live-server
+31 silly cache afterAdd live-server@1.0.0
+32 verbose afterAdd /Users/shawnfarnum/.npm/live-server/1.0.0/package/package.json not in flight; writing
+33 verbose correctMkdir /Users/shawnfarnum/.npm correctMkdir not in flight; initializing
+34 verbose afterAdd /Users/shawnfarnum/.npm/live-server/1.0.0/package/package.json written
+35 silly install resolved [ { name: 'live-server',
+35 silly install resolved     version: '1.0.0',
+35 silly install resolved     description: 'simple development http server with live reload capability',
+35 silly install resolved     keywords: [ 'front-end', 'development', 'tool', 'server', 'http', 'cli' ],
+35 silly install resolved     author: { name: 'Tapio Vierros' },
+35 silly install resolved     dependencies:
+35 silly install resolved      { colors: 'latest',
+35 silly install resolved        connect: '3.4.x',
+35 silly install resolved        cors: 'latest',
+35 silly install resolved        'event-stream': 'latest',
+35 silly install resolved        'faye-websocket': '0.10.x',
+35 silly install resolved        'http-auth': '2.2.x',
+35 silly install resolved        morgan: '^1.6.1',
+35 silly install resolved        'object-assign': 'latest',
+35 silly install resolved        opn: 'latest',
+35 silly install resolved        send: 'latest',
+35 silly install resolved        'serve-index': '^1.7.2',
+35 silly install resolved        watchr: '2.3.x' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { mocha: '^2.3.3',
+35 silly install resolved        supertest: '^1.0.1',
+35 silly install resolved        eslint: '^2.8.0',
+35 silly install resolved        jshint: '^2.9.2' },
+35 silly install resolved     scripts:
+35 silly install resolved      { lint: 'eslint live-server.js index.js',
+35 silly install resolved        hint: 'jshint live-server.js index.js',
+35 silly install resolved        test: 'mocha test && npm run lint' },
+35 silly install resolved     bin: { 'live-server': './live-server.js' },
+35 silly install resolved     repository: { type: 'git', url: 'https://github.com/tapio/live-server.git' },
+35 silly install resolved     engines: { node: '>=0.10.0' },
+35 silly install resolved     preferGlobal: true,
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     eslintConfig: { env: [Object], rules: [Object] },
+35 silly install resolved     readme: '[![view on npm](http://img.shields.io/npm/v/live-server.svg)](https://www.npmjs.org/package/live-server)\n[![npm module downloads per month](http://img.shields.io/npm/dm/live-server.svg)](https://www.npmjs.org/package/live-server)\n\nLive Server\n===========\n\nThis is a little development server with live reload capability. Use it for hacking your HTML/JavaScript/CSS files, but not for deploying the final site.\n\nThere are two reasons for using this:\n\n1. AJAX requests don\'t work with the `file://` protocol due to security restrictions, i.e. you need a server if your site fetches content through JavaScript.\n2. Having the page reload automatically after changes to files can accelerate development.\n\nYou don\'t need to install any browser plugins or manually add code snippets to your pages for the reload functionality to work, see "How it works" section below for more information. If you don\'t want/need the live reload, you should probably use something even simpler, like the following Python-based one-liner:\n\n\tpython -m SimpleHTTPServer\n\n\nInstallation\n------------\n\nYou need node.js and npm. You should probably install this globally.\n\n**Npm way**\n\n\tnpm install -g live-server\n\n**Manual way**\n\n\tgit clone https://github.com/tapio/live-server\n\tcd live-server\n\tnpm install # Local dependencies if you want to hack\n\tnpm install -g # Install globally\n\n\nUsage from command line\n-----------------------\n\nIssue the command `live-server` in your project\'s directory. Alternatively you can add the path to serve as a command line parameter.\n\nThis will automatically launch the default browser. When you make a change to any file, the browser will reload the page - unless it was a CSS file in which case the changes are applied without a reload.\n\nCommand line parameters:\n\n* `--port=NUMBER` - select port to use, default: PORT env var or 8080\n* `--host=ADDRESS` - select host address to bind to, default: IP env var or 0.0.0.0 ("any address")\n* `--no-browser` - suppress automatic web browser launching\n* `--browser=BROWSER` - specify browser to use instead of system default\n* `--quiet` - suppress logging\n* `--open=PATH` - launch browser to PATH instead of server root\n* `--watch=PATH` - comma-separated string of paths to exclusively watch for changes (default: watch everything)\n* `--ignore=PATH` - comma-separated string of paths to ignore\n* `--ignorePattern=RGXP` - Regular expression of files to ignore (ie `.*\\.jade`)\n* `--entry-file=PATH` - serve this file in place of missing files (useful for single page apps)\n* `--mount=ROUTE:PATH` - serve the paths contents under the defined route (multiple definitions possible)\n* `--spa` - translate requests from /abc to /#/abc (handy for Single Page Apps)\n* `--wait=MILLISECONDS` - wait for all changes, before reloading\n* `--htpasswd=PATH` - Enables http-auth expecting htpasswd file located at PATH\n* `--cors` - Enables CORS for any origin (reflects request origin, requests with credentials are supported)\n* `--https=PATH` - PATH to a HTTPS configuration module\n* `--help | -h` - display terse usage hint and exit\n* `--version | -v` - display version and exit\n\nDefault options:\n\nIf a file `~/.live-server.json` exists it will be loaded and used as default options for live-server on the command line. See "Usage from node" for option names.\n\n\nUsage from node\n---------------\n\n```javascript\nvar liveServer = require("live-server");\n\nvar params = {\n\tport: 8181, // Set the server port. Defaults to 8080.\n\thost: "0.0.0.0", // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.\n\troot: "/public", // Set root directory that\'s being server. Defaults to cwd.\n\topen: false, // When false, it won\'t load your browser by default.\n\tignore: \'scss,my/templates\', // comma-separated string for paths to ignore\n\tfile: "index.html", // When set, serve this file for every 404 (useful for single-page applications)\n\twait: 1000, // Waits for all changes, before reloading. Defaults to 0 sec.\n\tmount: [[\'/components\', \'./node_modules\']], // Mount a directory to a route.\n\tlogLevel: 2 // 0 = errors only, 1 = some, 2 = lots\n};\nliveServer.start(params);\n```\n\nHTTPS\n---------------\n\nIn order to enable HTTPS support, you\'ll need to create a configuration module.\nThe module must export an object that will be used to configure a HTTPS server.\nThe keys are the same as the keys in `options` for [tls.createServer](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener).\n\nFor example:\n```javascript\nvar fs = require("fs");\n\nmodule.exports = {\n\tcert: fs.readFileSync(__dirname + "/server.cert"),\n\tkey: fs.readFileSync(__dirname + "/server.key"),\n\tpassphrase: "12345"\n};\n```\n\nTroubleshooting\n---------------\n\nOpen your browser\'s console: there should be a message at the top stating that live reload is enabled. Note that you will need a browser that supports WebSockets. If there are errors, deal with them. If it\'s still not working, [file an issue](https://github.com/tapio/live-server/issues).\n\n\nHow it works\n------------\n\nThe server is a simple node app that serves the working directory and its subdirectories. It also watches the files for changes and when that happens, it sends a message through a web socket connection to the browser instructing it to reload. In order for the client side to support this, the server injects a small piece of JavaScript code to each requested html file. This script establishes the web socket connection and listens to the reload requests. CSS files can be refreshed without a full page reload by finding the referenced stylesheets from the DOM and tricking the browser to fetch and parse them again.\n\n\nContributing\n------------\n\nWe welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.\n\n\nVersion history\n---------------\n\n* v1.0.0\n\t- HTTPS support (@pavel)\n\t- HTTP Basic authentication support (@hey-johnnypark)\n\t- CORS support (@pavel)\n\t- Support mounting single files (@pavel)\n\t- `--spa` cli option for single page apps, translates requests from /abc to /#/abc (@evanplaice)\n\t- Check `IP` env var for default host (@dotnetCarpenter)\n\t- Fix `ignorePattern` from config file (@cyfersystems)\n\t- Fix test running for Windows (@peterhull90)\n* v0.9.2\n\t- Updated most dependencies to latest versions\n\t- `--quiet` now silences warning about injection failure\n\t- Giving explicit `--watch` paths now disables adding mounted paths to watching\n* v0.9.1\n\t- `--ignorePattern=RGXP` exclude files from watching by regexp (@psi-4ward)\n\t- `--watch=PATH` cli option to only watch given paths\n* v0.9.0\n\t- `--mount=ROUTE:PATH` cli option to specify alternative routes to paths (@pmentz)\n\t- `--browser=BROWSER` cli option to specify browser to use (@sakiv)\n\t- Improved error reporting\n\t- Basic support for injecting the reload code to SVG files (@dotnetCarpenter, @tapio)\n\t- LiveServer.shutdown() function to close down the server and file watchers\n\t- If host parameter is given, use it for browser URL instead of resolved IP\n\t- Initial testing framework (@harrytruong, @evanplaice, @tapio)\n* v0.8.2\n\t- Load initial settings from `~/.live-server.json` if exists (@mikker)\n\t- Allow `--port=0` to select random port (@viqueen)\n\t- Fix injecting when file extension is not lower case (@gusgard)\n\t- Fail gracefully if browser does not support WebSockets (@mattymaloney)\n\t- Switched to a more maintained browser opening library\n* v0.8.1\n\t- Add `--version / -v` command line flags to display version\n\t- Add `--host` cli option to mirror the API parameter\n\t- Once again use 127.0.0.1 instead of 0.0.0.0 as the browser URL\n* v0.8.0\n\t- Support multiple clients simultaneously (@dvv)\n\t- Pick a random available port if the default is in use (@oliverzy, @harrytruong)\n\t- Fix Chrome sometimes not applying CSS changes (@harrytruong)\n\t- `--ignore=PATH` cli option to not watch given server root relative paths (@richardgoater)\n\t- `--entry-file=PATH` cli option to specify file to use when request is not found (@izeau)\n\t- `--wait=MSECS` cli option to wait specified time before reloading (@leolower, @harrytruong)\n* v0.7.1\n\t- Fix hang caused by trying to inject into fragment html files without `</body>`\n\t- `logLevel` parameter in library to control amount of console spam\n\t- `--quiet` cli option to suppress console spam\n\t- `--open=PATH` cli option to launch browser in specified path instead of root (@richardgoater)\n\t- Library\'s `noBrowser: true` option is deprecated in favor of `open: false`\n* v0.7.0\n\t- API BREAKAGE: LiveServer library now takes parameters in an object\n\t- Add possibility to specify host to the lib\n\t- Only inject to host page when working with web components (e.g. Polymer) (@davej)\n\t- Open browser to 127.0.0.1, as 0.0.0.0 has issues\n\t- `--no-browser` command line flag to suppress browser launch\n\t- `--help` command line flag to display usage\n* v0.6.4\n\t- Allow specifying port from the command line: `live-server --port=3000` (@Pomax)\n\t- Don\'t inject script as the first thing so that DOCTYPE remains valid (@wmira)\n\t- Be more explicit with listening to all interfaces (@inadarei)\n* v0.6.3\n\t- Fix multiple _cacheOverride parameters polluting css requests\n\t- Don\'t create global variables in the injected script\n* v0.6.2\n\t- Fix a deprecation warning from `send`\n* v0.6.1\n\t- Republish to fix npm troubles\n* v0.6.0\n\t- Support for using as node library (@dpgraham)\n* v0.5.0\n\t- Watching was broken with new versions of `watchr` > 2.3.3\n\t- Added some logging to console\n* v0.4.0\n\t- Allow specifying directory to serve from command line\n* v0.3.0\n\t- Directory listings\n* v0.2.0\n\t- On-the-fly CSS refresh (no page reload)\n\t- Refactoring\n* v0.1.1\n\t- Documentation and meta tweaks\n* v0.1.0\n\t- Initial release\n\n\nLicense\n-------\n\nUses MIT licensed code from [Connect](https://github.com/senchalabs/connect/) and  [Roots](https://github.com/jenius/roots).\n\n(MIT License)\n\nCopyright (c) 2012 Tapio Vierros\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+35 silly install resolved     readmeFilename: 'README.md',
+35 silly install resolved     bugs: { url: 'https://github.com/tapio/live-server/issues' },
+35 silly install resolved     _id: 'live-server@1.0.0',
+35 silly install resolved     _from: 'live-server@latest' } ]
+36 info install live-server@1.0.0 into /usr/local/lib
+37 info installOne live-server@1.0.0
+38 verbose installOne of live-server to /usr/local/lib not in flight; installing
+39 verbose correctMkdir /Users/shawnfarnum/.npm/_locks correctMkdir not in flight; initializing
+40 verbose lock using /Users/shawnfarnum/.npm/_locks/live-server-1932c27c2adeb129.lock for /usr/local/lib/node_modules/live-server
+41 silly install write writing live-server 1.0.0 to /usr/local/lib/node_modules/live-server
+42 verbose unbuild lib/node_modules/live-server
+43 silly gentlyRm /usr/local/lib/node_modules/live-server is being purged from base /usr/local
+44 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/live-server
+45 verbose tar unpack /Users/shawnfarnum/.npm/live-server/1.0.0/package.tgz
+46 verbose tar unpacking to /usr/local/lib/node_modules/live-server
+47 silly gentlyRm /usr/local/lib/node_modules/live-server is being purged
+48 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/live-server
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 error tar.unpack untar error /Users/shawnfarnum/.npm/live-server/1.0.0/package.tgz
+51 verbose unlock done using /Users/shawnfarnum/.npm/_locks/live-server-1932c27c2adeb129.lock for /usr/local/lib/node_modules/live-server
+52 verbose fstream_path /usr/local/lib/node_modules/live-server
+53 verbose fstream_type Directory
+54 verbose fstream_class DirWriter
+55 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/live-server'
+55 verbose stack     at Error (native)
+56 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+56 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+56 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+57 verbose cwd /Users/shawnfarnum/MTCS/week_1/day_1/day_1_project_2
+58 error Darwin 15.5.0
+59 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "live-server"
+60 error node v4.4.5
+61 error npm  v2.15.5
+62 error path /usr/local/lib/node_modules/live-server
+63 error code EACCES
+64 error errno -13
+65 error syscall mkdir
+66 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/live-server'
+66 error     at Error (native)
+66 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/live-server']
+66 error   errno: -13,
+66 error   code: 'EACCES',
+66 error   syscall: 'mkdir',
+66 error   path: '/usr/local/lib/node_modules/live-server',
+66 error   fstream_type: 'Directory',
+66 error   fstream_path: '/usr/local/lib/node_modules/live-server',
+66 error   fstream_class: 'DirWriter',
+66 error   fstream_stack:
+66 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+66 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+66 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+67 error Please try running this command again as root/Administrator.
+68 verbose exit [ -13, true ]
+69 verbose unbuild lib/node_modules/live-server
+70 silly gentlyRm /usr/local/lib/node_modules/live-server is being purged from base /usr/local
+71 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/live-server
